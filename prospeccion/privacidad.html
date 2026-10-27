@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad de Prospeccion</title>
+<style>
+  :root { --fondo: #ffffff; --texto: #1f2328; --suave: #59636e; --enlace: #0969da; }
+  @media (prefers-color-scheme: dark) { :root { --fondo: #0d1117; --texto: #e6edf3; --suave: #9198a1; --enlace: #4493f8; } }
+  body { background: var(--fondo); color: var(--texto); font: 17px/1.6 system-ui, sans-serif; margin: 0; padding: 48px 16px; }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { margin-top: 0; }
+  p.suave { color: var(--suave); }
+  a { color: var(--enlace); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Prospeccion</h1>
+  <p class="suave">Última actualización: 27 de octubre de 2026</p>
+
+  <h2>Qué es Prospeccion</h2>
+  <p>Prospeccion es una automatización personal que se ejecuta en el servidor n8n de su usuario. No es un servicio para el público: solo la usa su propietario.</p>
+
+  <h2>Datos de Google a los que accede</h2>
+  <p>Con el permiso del usuario, Prospeccion accede a Google Sheets para:</p>
+  <ul>
+    <li>leer las filas de la hoja de cálculo que el usuario ha elegido, para no repetir negocios y mostrar su lista de contactos;</li>
+    <li>añadir filas nuevas con los negocios encontrados;</li>
+    <li>actualizar el estado de cada negocio (contactado, respondió, descartado…) cuando el usuario lo indica.</li>
+  </ul>
+  <p>No accede a ninguna otra hoja, documento ni dato de la cuenta de Google del usuario.</p>
+
+  <h2>Cómo se usan y guardan esos datos</h2>
+  <ul>
+    <li>Los datos de la hoja solo se usan para el propio usuario: organizar los negocios que quiere contactar.</li>
+    <li>El permiso de acceso (token de OAuth) se guarda cifrado únicamente en el servidor n8n del usuario.</li>
+    <li>La información de los negocios procede de Google Maps (datos públicos de sus fichas: nombre, dirección, teléfono, valoración).</li>
+    <li>Los avisos diarios se envían solo al chat de Telegram del propio usuario.</li>
+  </ul>
+
+  <h2>Con quién se comparten</h2>
+  <p>Con nadie. Prospeccion no vende, comparte ni transfiere datos a terceros, no los usa para publicidad y no los emplea para entrenar modelos.</p>
+  <p>El uso y la transferencia a cualquier otra aplicación de la información recibida de las API de Google se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+  <h2>Cómo retirar el acceso y borrar los datos</h2>
+  <ul>
+    <li>Retirar el permiso de Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> → Prospeccion → Quitar acceso.</li>
+    <li>Borrar los datos: eliminar la hoja de cálculo en Google Drive y la credencial en n8n.</li>
+  </ul>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier duda sobre esta política: <a href="https://github.com/Abeloider">github.com/Abeloider</a>.</p>
+
+  <p><a href="index.html">Volver a Prospeccion</a></p>
+</main>
+</body>
+</html>
